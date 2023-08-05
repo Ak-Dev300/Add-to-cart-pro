@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap">
+    <link rel="stylesheet" href="index2.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="./index.html">&leftarrow;</a>
+            </nav>
+        </header>
+        <main>
+            <div class="list-command">
+                <h3>Bought Items:</h3>
+                <h3 id="delete_all">Delete Left-Out Items</h3>
+            </div>
+            <div>
+                <ol id="bought-items-list"></ol>
+                <p id="no-bought-items">No items bought yet.</p>
+                <p class="total"></p>
+            </div>
+        </main>
+    </div>
+    
+    <script src="./index2.js" type="module"></script>
+</body>
+</html>

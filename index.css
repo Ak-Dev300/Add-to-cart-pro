@@ -1,0 +1,195 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #eef0f4;
+    user-select: none;
+}
+
+#cart-img{
+    width: 100px;
+    height: 100px;
+    padding-bottom: 60px;
+    margin: auto;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    /* border: black solid 3px; */
+    margin: auto;
+    /* margin-top: 50px; */
+    padding-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 4px;
+
+}
+
+#help-prompt{
+    align-self: flex-end;
+}
+
+
+#input-field,#input-price-field{
+    border-radius: 4px;
+    background-color: #bdd5fa;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    /* color: #ce83f7; */
+}
+
+#input-field::placeholder,#input-price-field::placeholder{
+    color: #ce83f7;
+    font-size: medium;
+    text-align: center;
+}
+
+#input-price-field::-webkit-outer-spin-button,#input-price-field::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#list-items{
+    padding: 0;
+}
+
+
+#add-button{
+    padding: 15px;
+    border-radius: 4px;
+    background-color: #ce83f7;
+    color: #a5c8fb;
+    border: none;
+    font-size: medium;
+    margin-bottom: 40px;
+    font-family: 'Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: all 0.45s ease;
+}
+
+#add-button:hover{
+    background-color: #bd4ef8;
+    cursor: pointer;
+}
+
+ul{
+    margin-top: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.empty-list{
+    color: #a5c8fb;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+li{
+    flex-grow: 1;
+    text-align: center;
+    background-color: #fffdf8;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
+    font-size: 19px;
+    padding: 15px;
+    color: #ce83f7;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.45s ease;
+}
+
+li:hover{
+    background-color: #d5e4fa;
+}
+
+li.mark{
+    text-decoration: line-through;
+}
+
+/* .next-page a{
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #bd4ef8;
+    color: #a5c8fb;
+} */
+
+#next-page{
+    text-align: center;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 40px;
+    display: none;
+}
+
+#next-page.showing{
+    display: block;
+}
+#next-page h3{
+    color: #bd4ef8;
+}
+
+.drop-menu{
+    display: none;
+}
+
+.drop-menu.show{
+    display: block;
+}
+
+#prompt-id {
+    text-decoration: none;
+    color: #bd4ef8;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 0;
+    border-radius: 5px;
+    border: #bd4ef8 solid 2px;
+    max-width: 180px;
+    text-align: center;
+    transition: 0.45s all ease;
+}
+
+/* #prompt-btn{
+    padding: 10px;
+    border: #bd4ef8 solid 2px;
+    border-radius: 5px;
+    transition: 0.45s all ease;
+}
+
+#prompt-btn:hover{
+    background-color: #bd4ef8;
+    color: white;
+} */
+
+#prompt-id:hover,#prompt-id:active{
+    color: #fffdf8;
+    background-color: #bd4ef8;
+}
+
+#delete-all{
+    align-self: flex-end;
+    display: none;
+    color: #a5c8fb;
+    padding: 10px;
+    border: #a5c8fb solid 2px;
+    border-radius: 5px;
+    transition: 0.45s all ease;
+}
+
+#delete-all:hover, #delete-all:active{
+    background-color: #a5c8fb;
+    color: #fffdf8;
+}
+

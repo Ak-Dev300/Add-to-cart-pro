@@ -1,0 +1,87 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik','Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    user-select: none;
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+    /* border: black solid 2px; */
+    padding: 10px 30px 5px;
+}
+
+nav{
+    padding-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    /* text-align: start; */
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #bd4ef8;
+    color: #a5c8fb;
+}
+
+.list-command{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#list-items{
+    padding: 0;
+    list-style-position: inside;
+    margin-top: 0;
+}
+
+.open-calc{
+    display: none;
+}
+
+.open-calc.opens{
+    display: block;
+}
+
+
+.open{
+    cursor: pointer;
+    color: #bd4ef8;
+}
+
+.innerhtml{
+    font-size: 20px;
+}
+
+#clear-list{
+    color: red;
+    cursor: pointer;
+}
+
+#delete_all {
+    align-self: flex-end;
+    color: #a5c8fb;
+    padding: 10px;
+    border: #a5c8fb solid 2px;
+    border-radius: 5px;
+    transition: 0.45s all ease;
+}
+
+#delete_all:hover,
+#delete_all:active {
+    background-color: #a5c8fb;
+    color: #fffdf8;
+}
+
+@media(max-width: 400px){
+    h3{
+        font-size: 15px;
+    }
+}
